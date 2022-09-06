@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title></title>
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" href="/icon.png">
+
+  <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+<body>
+
+  <div class="dark-back" id="dark-back"></div>
+
+  <div class="wrapper">
+    <header> 
+      <img src="/img/bbva-logo.png" alt="logo" height="100%">
+      <img src="/img/menu.png" class="icono menu" id="menu" alt="notificaciones" height="100%">
+      <img src="/img/bell.png" class="icono" id="notificaciones" alt="notificaciones" height="100%">
+    </header>
+  
+    <div class="box">
+      <div class="sidenav hide-bar" id="sidenav">
+
+        <div class="usuario">
+          <img src="/img/user.png" alt="user" width="40%">
+          <h3> ¡Bienvenido Alan!</h3>
+          <label>Recursos Humanos</label>
+        </div>
+
+        <nav>
+          <a href="#" class="selected">Lista de candidatos</a>
+          <a href="#">Agregar Candidato</a>
+          <a href="/index.html" class="logout">Cerrar sesión <img src="/img/logout.png" alt="logout" width="30px"></a>
+        </nav>
+      </div>
+  
+      <div class="content">
+        <h1>Candidatos</h1>
+        <form class="form-rh" action="">
+            <h2>Nombre</h2>
+            <input class="field-rh" type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <h2>Posición</h2>
+            <input class="field-rh" type="text" name="posicion" id="posicion" placeholder="Posición">
+            <h2>Entrevistador</h2>
+            <input class="field-rh" type="text" name="entrevistador" id="entrevistador" placeholder="Entrevistador">
+            <h2>Fecha entrevista</h2>
+            <input class="field-rh" type="date" name="fecha" id="fecha">
+            <br>
+            <br>
+            <label for="file-upload" class="btn-color-blue btn-cv">
+                Curriculum Vitae
+            </label>
+            <input id="file-upload"  type="file" name="Curriculim Vitae" id="cv" style="text-decoration: ;">
+            
+            <br>
+            <br>
+            <input class= "btn-color-blue btn-guardar" type="submit" value="Guardar">
+        </form>
+      </div>
+
+    </div>
+    
+  </div>
+  
+  <script src="/js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="/js/plugins.js"></script>
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>

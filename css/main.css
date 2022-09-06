@@ -216,7 +216,78 @@
     position: absolute;
     display: none;
   }
+
+  /* Estilos del formulario RH*/
+  .content{
+    width: 100%;
+  }
+  .content h1{
+    width: 100%;
+    font-family: 'Droid Sans'; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+
+color: #000000;
+  }
+  .form-rh{
+    width: 100%;
+  }
+  .form-rh h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 2%;
+    margin-bottom: 0%;
+    line-height: 28px;
+    color: #000000;
+  }
+
+  .field-rh{
+    width: 30%;
+    height: 38px;
+    margin-left: 2%;
+    background: #FFFFFF;
+    border: 1px solid #070708;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  .btn-color-blue{
+    background: #006EC1;
+    border: 1px solid #006EC1;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    margin-left: 2%;
+    height: 38px;
+    padding: 5px;
+  }
+  .btn-cv{
+    width: 40%;
+    padding: 10px 20px;
+  }
+  .btn-guardar{
+    width: 10px 15px;
+  }
+
+  /*Custom para boton de cv*/
+
+input[type="file"] {
+    display: none;
+}
+
+
+  /*Fin de Custom*/
+
+  /* Fin de Estilos del formulario RH*/
   
+  /*Responsive nav*/
   @media only screen and (min-width: 768px) {
     .sidenav {
       width: 200px;
@@ -239,9 +310,9 @@
       width: 250px;
     }
   }
+
   
-  
-  /*Responsive*/
+  /*Responsive Login*/
   
   
   @media screen and (max-width: 768px) {
@@ -267,5 +338,8 @@
       height: 38px;
       width: 80%;
       margin-left: 10%;
+    }
+    .field-rh{
+      width: 80%;
     }
   }

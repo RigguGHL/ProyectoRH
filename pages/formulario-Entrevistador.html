@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Formulario Entrevistador</title>
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" href="/icon.png">
+
+  <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+<body>
+
+  <div class="dark-back" id="dark-back"></div>
+
+  <div class="wrapper">
+    <header> 
+      <img src="/img/bbva-logo.png" alt="logo" height="100%">
+      <img src="/img/menu.png" class="icono menu" id="menu" alt="notificaciones" height="100%">
+      <img src="/img/bell.png" class="icono" id="notificaciones" alt="notificaciones" height="100%">
+    </header>
+  
+    <div class="box">
+      <div class="sidenav hide-bar" id="sidenav">
+
+        <div class="usuario">
+          <img src="/img/user.png" alt="user" width="40%">
+          <h3> ¡Bienvenido Alan!</h3>
+          <label>Entrevistador</label>
+        </div>
+
+        <nav>
+          <a href="#" class="selected">Lista de candidatos</a>
+          <a href="#">Opciones</a>
+          <a href="/index.html" class="logout">Cerrar sesión <img src="/img/logout.png" alt="logout" width="30px"></a>
+        </nav>
+      </div>
+  
+      <div class="content">
+        <h1>Frontend Developer  -  Alan Josue López López</h1>
+        <form class="form-entrevistador" action="">
+            <h2>Experiencia</h2>
+            <input class="field-entrevistador" type="text" name="experiencia" id="experiencia" placeholder="Experiencia">
+            <h2>Tecnologias</h2>
+            <input class="field-entrevistador" type="text" name="tecnologias" id="tecnologias" placeholder="Tecnologias">
+            <h2>Nivel del candidato</h2>
+            <select class="field-entrevistador" name="nivel-candidato" id="nivel-candidato" >
+                <!-- Opciones de la lista -->
+                <option hidden selected>Selecciona una nivel</option>
+                <option value="1">Baja</option>
+                <option value="2">Media</option> <!-- Opción por defecto -->
+                <option value="3">Alta</option>
+            </select>
+            <h2>¿Cumple con la vacante?</h2>
+            <input checked class="radio-check" type="radio"  name="respuesta-check" value=1>Si
+            <input class="radio-check" type="radio" name="respuesta-check" value=0>No
+            <h2>
+                Observaciones
+            </h2>
+            <textarea class="txtarea-observaciones" name="observaciones" id="observaciones" cols="80" rows="10" placeholder="Observaciones y comentarios">
+            </textarea>
+            <br>    
+            <div class="div-resultados">
+            <input class= "btn-color-blue-res btn-resultados" type="submit" value="Subir Resultados">
+            </div>
+        </form>
+      </div>
+
+    </div>
+    
+  </div>
+  
+  <script src="/js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="/js/plugins.js"></script>
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>

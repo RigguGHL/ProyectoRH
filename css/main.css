@@ -87,10 +87,11 @@
     margin-bottom: 65px;
   }
   
-  input::placeholder {
+  input::placeholder,textarea::placeholder {
     padding: 10px;
     color: #D2D2D2;
   }
+  
   
   .btn-ingresar {
     width: 50%;
@@ -234,7 +235,7 @@ color: #000000;
   .form-rh{
     width: 100%;
   }
-  .form-rh h2{
+  .form-rh h2,.form-entrevistador h2{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -268,6 +269,20 @@ color: #000000;
     height: 38px;
     padding: 5px;
   }
+  .btn-color-blue-res{
+    background: #006EC1;
+    border: 1px solid #006EC1;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    width: 50px;
+    height: 38px;
+    padding: 5px;
+  }
   .btn-cv{
     width: 40%;
     padding: 10px 20px;
@@ -284,9 +299,45 @@ input[type="file"] {
 
 
   /*Fin de Custom*/
-
   /* Fin de Estilos del formulario RH*/
   
+/*Estilos Formulario entrevistador*/
+.field-entrevistador{
+  width: 50%;
+  height: 38px;
+  margin-left: 2%;
+  background: #FFFFFF;
+  border: 1px solid #070708;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.radio-check,.txtarea-observaciones{
+  margin-left: 2%;  
+}
+.txtarea-observaciones{
+  width: 50%;
+}
+
+.div-resultados{
+ display: grid;
+ width: 53%;
+ height: 45px;
+ margin-top: 20px;
+ margin-left: 0;
+ margin-right: 0;
+ grid-template-columns: 33.33% 33.33% 33.33%;
+ grid-template-rows: auto;
+
+}
+.btn-resultados{
+ /* margin-left: 35%;*/
+  margin-right: 0;
+  grid-column: 3;
+  width:80%;
+  margin-left: 20%;
+  height: auto;
+}
+/*Fin Estilos Formulario entrevistador*/
   /*Responsive nav*/
   @media only screen and (min-width: 768px) {
     .sidenav {
@@ -342,4 +393,32 @@ input[type="file"] {
     .field-rh{
       width: 80%;
     }
+    .field-entrevistador,.txtarea-observaciones{
+      margin-left: 5%;
+      width: 90%;
+    }
+    .form-entrevistador h2{
+      margin-left: 5%;
+    }
+    .radio-check{
+      margin-left: 5%;
+    }
+
+    
+    .div-resultados{
+      display: grid;
+      width: 100%;
+      height: 60px;
+      margin-top: 20px;
+      margin-left: 0;
+      margin-right: 0;
+      grid-template-columns: 33.33% 33.33% 33.33%;
+      grid-template-rows: auto;
+    }
+    .btn-resultados{
+      margin-left: 0;
+      width: 100%;
+      height: 40px;
+    }
+  
   }

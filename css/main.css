@@ -414,8 +414,6 @@ input[type="file"] {
 
     .show-mobile {
       display: none;
-      width: 100%;
-      float: left;
     }
 
     .content {

@@ -392,6 +392,116 @@ input[type="file"] {
   height: auto;
 }
 /*Fin Estilos Formulario entrevistador*/
+
+/*Estilos de la pantalla de gráficos*/
+.submenu{
+    list-style-type: none;
+    padding: 0;
+}
+.item{
+  list-style-type: none;
+}
+
+.grafico{
+  background: #52BCEC;
+  mix-blend-mode: luminosity;
+  border: 1px solid #FFFFFF;
+  color:#FFFFFF;
+}
+.grafico a:visited{
+  background:#2C93E0;
+  mix-blend-mode: normal;
+}
+.dashboard{
+  background: #52BCEC;
+  mix-blend-mode: luminosity;
+  border: 1px solid #FFFFFF;
+  color:#FFFFFF;
+}
+.img{
+  margin-left:30%; 
+  width: 35%;
+  padding: 1%;
+}
+.accordion{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
+.accordion label{
+  font-style: normal;
+  font-size: 11pt;
+}
+
+.accordion__label, .accordion__content{
+  padding: 14px 20px;
+  background: #006EC1;
+}
+.accordion__content a{
+  font-size: 10pt;
+}
+.accordion__label{
+  display: block;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.1s;
+}
+
+.accordion__label:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.accordion__content{
+  background: #2C93E0;
+  line-height: 1.6;
+  font-size: 0.85em;
+  display: none;
+  padding: 0;
+  padding-left: 20px;
+}
+.accordion__input{
+  display: none;
+}
+.accordion__input:checked ~ .accordion__content{
+  display: block;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  left: 0;
+  height: 6vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #01599B;
+  padding: 10px;
+}
+.footer-1{
+  grid-column: 1;
+  width: 100%;
+}
+
+.footer-2{
+  grid-column: 2;
+}
+
+.footer-3{
+  grid-column: 3;
+}
+.footer img{
+  padding-left: 30%;
+  width: 30%;
+}
+.footer-1 img{
+  padding-top: 5%;
+  width: 25%;
+}
+
+/*Fin de Estilos de la pantalla de gráficos*/
+
+
   /*Responsive nav*/
   @media only screen and (min-width: 768px) {
     .sidenav {
@@ -496,6 +606,11 @@ input[type="file"] {
       margin-left: 0;
       width: 100%;
       height: 40px;
+    }
+    .img{
+      margin: 0;
+      width: 100%;
+      margin-bottom: 15%;
     }
   
   }

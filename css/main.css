@@ -242,6 +242,23 @@
     border-collapse:collapse;
   }
 
+  .arrow {
+    padding: 3px;
+    transition: all 0.2s;
+  }
+
+  .toggle-down {
+    transform: rotate(0deg);
+  }
+
+  .toggle-up {
+    transform: rotate(180deg);
+  }
+  
+  .table th {
+    cursor: pointer;
+  }
+
   .table tr {
     text-align: left;
   }
@@ -284,12 +301,19 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-
-color: #000000;
+    color: #000000;
   }
+
+  .content .h1-su{
+    line-height: 75px;
+    display: inline;
+    padding-right: 5%;
+  }
+
   .form-rh{
     width: 100%;
   }
+
   .form-rh h2,.form-entrevistador h2{
     font-family: 'Inter';
     font-style: normal;
@@ -423,10 +447,7 @@ input[type="file"] {
   width: 35%;
   padding: 1%;
 }
-.accordion{
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  
-}
+
 .accordion label{
   font-style: normal;
   font-size: 11pt;
@@ -465,6 +486,14 @@ input[type="file"] {
 }
 .accordion__input:checked ~ .accordion__content{
   display: block;
+}
+
+.arrow-right {
+  transform: rotate(270deg);
+}
+
+.arrow-down {
+  transform: rotate(360deg);
 }
 
 .footer{

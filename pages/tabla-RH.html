@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title></title>
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" href="/icon.png">
+
+  <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+<body>
+
+  <div class="dark-back" id="dark-back"></div>
+
+  <div class="wrapper">
+    <header>
+      <img src="/img/bbva-logo.png" alt="logo" height="100%">
+      <img src="/img/menu.png" class="icono menu" id="menu" alt="notificaciones" height="100%">
+      <img src="/img/bell.png" class="icono" id="notificaciones" alt="notificaciones" height="100%">
+    </header>
+
+    <div class="box">
+      <div class="sidenav hide-bar" id="sidenav">
+
+        <div class="usuario">
+          <img src="/img/user.png" alt="user" width="40%">
+          <h3> ¡Bienvenido Alan!</h3>
+          <label> Recursos Humanos</label>
+        </div>
+
+        <nav>
+          <a href="#" class="selected">Lista de candidatos</a>
+          <a href="#">Agregar candidato</a>
+          <a href="/index.html" class="logout">Cerrar sesión <img src="/img/logout.png" alt="logout" width="30px"></a>
+        </nav>
+      </div>
+
+      <div class="content">
+        <table style="width: 100%;">
+          <tr>
+            <td><h1>Candidatos</h1></td>
+            <td class="hide-mobile"><input class="search-bar" placeholder="Buscar candidatos..."></td>
+          </tr>
+        </table>
+        <table class="table">
+          <tr>
+            <th>Nombre <img src="/img/arrow.png" class="arrow toggle-down" width="12px"></th>
+            <th class="hide-mobile">Posición <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
+            <th class="hide-mobile">Entrevistador <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
+            <th>Estatus <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
+            <th class="hide-mobile">Fecha entrevista <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
+          </tr>
+          <tr>
+            <td>Alan Josue López López</td>
+            <td class="hide-mobile">Frontend Developer</td>
+            <td class="hide-mobile">Luis Flores</td>
+            <td>Entrevistado</td>
+            <td class="hide-mobile">22/08/2022</td>
+            <td ><a class="btn-table"> <img src="/img/delete.png" width="18px" style="vertical-align: sub;"> <span class="hide-mobile">&nbsp;Eliminar </span></a></td>
+          </tr>
+          <tr>
+            <td>Jorge Aguilar hernandez</td>
+            <td class="hide-mobile">Frontend Developer</td>
+            <td class="hide-mobile">Pedro Gómez</td>
+            <td>Pendiente</td>
+            <td class="hide-mobile">25/08/2022</td>
+            <td><a class="btn-table"> <img src="/img/delete.png" width="18px" style="vertical-align: sub;"> <span class="hide-mobile">&nbsp;Eliminar </span></a></td>
+          </tr>
+          <tr>
+            <td>Set Reyes Sandoval</td>
+            <td class="hide-mobile">Frontend Developer</td>
+            <td class="hide-mobile">Laura Gómez</td>
+            <td>Entrevistado</td>
+            <td class="hide-mobile">20/08/2022</td>
+            <td><a class="btn-table"> <img src="/img/delete.png" width="18px" style="vertical-align: sub;"> <span class="hide-mobile">&nbsp;Eliminar </span></a></td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="/js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="/js/plugins.js"></script>
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>

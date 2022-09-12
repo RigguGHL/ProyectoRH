@@ -44,37 +44,19 @@
         <table style="width: 100%;">
           <tr>
             <td><h1>Candidatos</h1></td>
-            <td class="hide-mobile"><input class="search-bar" placeholder="Buscar candidatos..."></td>
+            <td class="hide-mobile"><input oninput="search(this)" class="search-bar" placeholder="Buscar candidatos..."></td>
           </tr>
         </table>
         <table class="table">
-          <tr>
-            <th>Nombre <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
-            <th>Posición <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
-            <th class="hide-mobile">Registro <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
-            <th class="hide-mobile">Estatus <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
-          </tr>
-          <tr>
-            <td>Alan Josue López López</td>
-            <td>Frontend Developer</td>
-            <td class="hide-mobile">22/08/2022</td>
-            <td class="hide-mobile">Por revisar</td>
-            <td ><a class="btn-table"> <img src="/img/eye.png" width="18px" style="vertical-align: sub;"> <span class="hide-mobile">&nbsp;Ver perfil </span></a></td>
-          </tr>
-          <tr>
-            <td>Jorge Aguilar hernandez</td>
-            <td>Frontend Developer</td>
-            <td class="hide-mobile">25/08/2022</td>
-            <td class="hide-mobile">Por revisar</td>
-            <td><a class="btn-table"> <img src="/img/eye.png" width="18px" style="vertical-align: sub;"> <span class="hide-mobile">&nbsp;Ver perfil </span></a></td>
-          </tr>
-          <tr>
-            <td>Set Reyes Sandoval</td>
-            <td>Frontend Developer</td>
-            <td class="hide-mobile">20/08/2022</td>
-            <td class="hide-mobile">Por revisar</td>
-            <td><a class="btn-table"> <img src="/img/edit.png" width="18px" style="vertical-align: sub;"> <span class="hide-mobile">&nbsp;Editar </span></a></td>
-          </tr>
+          <thead>
+            <tr>
+              <th onclick="sort('name',this)">Nombre <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
+              <th onclick="sort('birth_year',this)">Posición <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
+              <th onclick="sort('created',this)" class="hide-mobile">Registro <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
+              <th onclick="sort('gender',this)" class="hide-mobile">Estatus <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
+            </tr>
+          </thead>
+          <tbody id="data"></tbody>
         </table>
       </div>
 
@@ -84,6 +66,7 @@
 
   <script src="/js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="/js/plugins.js"></script>
+  <script src="/js/entrevistador-api.js"></script>
   <script src="/js/main.js"></script>
 
 </body>

@@ -263,7 +263,7 @@
     text-align: left;
   }
 
-  .table tr:not(:first-child) {
+  .table tbody tr {
     background-color: #EEEEEE;
     border: white 3px solid;
   }

@@ -19,8 +19,8 @@
             <div class="img-user">
                 <img src="img/Vector.png" alt="icono usuario">
             </div>
-
-            <form class="formulario" action="" method="POST">
+            <form class="formulario" action="" method="POST" id="formulario">
+                
                 <h2>Email</h2>
 
                 <input type="text" name="email" id="email" placeholder="Email" class="field">
@@ -29,11 +29,14 @@
                 <input type="password" name="password" id="password" placeholder="Password" class="field">
                 <input class="btn-ingresar" type="submit" value="Ingresar">
             </form>
+            
         </div>
         <div class="img-main">
             <img src="img/Allura UI Windows.png" alt="" width="80%" style="max-height: 100%;">
         </div>
     </div>
+    <div id="error"></div>
+    <script src="/js/vendor/login.js"></script>
 </body>
 
 </html>

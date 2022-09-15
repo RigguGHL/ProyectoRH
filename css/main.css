@@ -238,7 +238,6 @@
     background-color: #DADADA;
     padding: 7px;
     width: 40%;
-    
   }
 
   .search-bar::placeholder{
@@ -291,6 +290,18 @@
   .btn-table{
     background: #006EC1;
     border: 1px solid #006EC1;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    width: 100%;
+    padding: 8px 10px;
+    cursor: pointer;
+  }
+  .btn-delete{
+    background: #EEEEEE;
     border-radius: 20px;
     color: #FFFFFF;
     font-style: normal;
@@ -383,9 +394,28 @@ input[type="file"] {
     display: none;
 }
 
+/*Fin de Custom*/
+  
+/* Fin de Estilos del formulario RH*/
 
-  /*Fin de Custom*/
-  /* Fin de Estilos del formulario RH*/
+/*ESTILOS FORMULARIO SUPER USUARIO*/
+
+.titulo-form-su{
+  text-align: center;
+  font-size: 40px;
+}
+
+.field-su{
+  width: 30%;
+  height: 35px;
+  margin-left: 2%;
+  background: #FFFFFF;
+  border: 1px solid #070708;
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+
+/* FIN DE ESTILOS FORMULARIO SUPER USUARIO*/
   
 /*Estilos Formulario entrevistador*/
 .field-entrevistador{
@@ -653,5 +683,21 @@ input[type="file"] {
       margin-left: 5%;
       width: 90%;
     }
-  
-  }
+    .search-bar{
+      float: right;
+      border-radius: 15px;
+      border: #DADADA 1px solid;
+      background-color: #DADADA;
+      width: 160%;
+      margin-top: 35%;
+    }
+    .content h1 {
+      font-size: 21px;
+    }
+    .field-su {
+      width: 80%;
+    }
+    .titulo-form-su{
+      text-align: justify;
+    }
+}

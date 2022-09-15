@@ -3,7 +3,7 @@
 var data = [];
 
 //Llamado API
-fetch('http://localhost:3000/tablaEntrevistadorAndSu')
+fetch('http://localhost:3000/tablaSu')
     .then(response => response.json()) 
     .then(json => {
         console.log(json);
@@ -29,10 +29,14 @@ function sort(property, element){
 function search(element) {
     const searchString = element.value.toLowerCase();
     const filterData = data.filter(item => (
-        item.nombre.toLowerCase().includes(searchString) ||
-        item.posicion.toLowerCase().includes(searchString) ||
+
+        item.nombreRh.toLowerCase().includes(searchString) ||
         item.fechaRegistro.toLowerCase().includes(searchString) ||
-        item.estatus.toLowerCase().includes(searchString)
+        item.nombre.toLowerCase().includes(searchString) ||
+        item.especialidad.toLowerCase().includes(searchString) ||
+        item.experiencia.toLowerCase().includes(searchString) ||
+        item.encargado.toLowerCase().includes(searchString) ||
+        item.cv.toLowerCase().includes(searchString)
     ));
     buildTable(filterData);
 }
@@ -42,23 +46,15 @@ function buildTable (tableData){
     document.getElementById("data").innerHTML = "";
     tableData.forEach((item) => {
         temp += "<tr>";
-        temp += "<td>" + item.nombre + "</td>";
-        temp += "<td>" + item.posicion + "</td>";
+        temp += "<td class='hide-mobile'>" + item.nombreRh + "</td>";
         temp += "<td class='hide-mobile'>" + item.fechaRegistro + "</td>";
-        temp += "<td class='hide-mobile'>" + item.estatus + "</td>";
-        temp += "<td><a onclick = 'botonDinamico()' class='btn-table' href='../pages/formulario-Entrevistador.html?nombre="+ item.nombre +"&puesto="+item.posicion+"'> <img src='/img/eye.png' width='18px' style='vertical-align: sub;'> <span id='texto' class='hide-mobile'>&nbsp;Ver perfil </span></a></td>";
+        temp += "<td>" + item.nombre + "</td>";
+        temp += "<td class='hide-mobile'>" + item.especialidad + "</td>";
+        temp += "<td class='hide-mobile'>" + item.experiencia + "</td>";
+        temp += "<td>" + item.encargado + "</td>";
+        temp += "<td class='hide-mobile'>" + item.cv + "</td>";
+        temp += "<td><a class='btn-table'>  <span class='hide-mobile'>&nbsp;Seleccionar</span><img src='/img/flecha.png' width='14px' style='vertical-align: sub;'></a></td>";
         temp += "</tr>";
     });
     document.getElementById("data").innerHTML += temp;
 }
-
-/*
-function botonDinamico(){
-    let botonVerImg = document.querySelector('.btn-table img');
-    let botonVerText = document.querySelector('#texto')
-    console.log(botonVerImg);
-    console.log(botonVerText);
-    botonVerImg.src = '../img/lapiz.png';
-    botonVerText.textContent = 'Editar';
-    }
-*/

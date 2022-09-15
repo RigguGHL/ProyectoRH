@@ -1,4 +1,4 @@
-//Entrevistador tabla
+//api su-rh tabla
 
 var data = [];
 
@@ -46,19 +46,8 @@ function buildTable (tableData){
         temp += "<td>" + item.posicion + "</td>";
         temp += "<td class='hide-mobile'>" + item.fechaRegistro + "</td>";
         temp += "<td class='hide-mobile'>" + item.estatus + "</td>";
-        temp += "<td><a onclick = 'botonDinamico()' class='btn-table' href='../pages/formulario-Entrevistador.html?nombre="+ item.nombre +"&puesto="+item.posicion+"'> <img src='/img/eye.png' width='18px' style='vertical-align: sub;'> <span id='texto' class='hide-mobile'>&nbsp;Ver perfil </span></a></td>";
+        temp += "<td><a class='btn-table'> <img src='/img/eye.png' width='18px' style='vertical-align: sub;'> <span class='hide-mobile'>&nbsp;Ver perfil </span></a></td>";
         temp += "</tr>";
     });
     document.getElementById("data").innerHTML += temp;
 }
-
-/*
-function botonDinamico(){
-    let botonVerImg = document.querySelector('.btn-table img');
-    let botonVerText = document.querySelector('#texto')
-    console.log(botonVerImg);
-    console.log(botonVerText);
-    botonVerImg.src = '../img/lapiz.png';
-    botonVerText.textContent = 'Editar';
-    }
-*/

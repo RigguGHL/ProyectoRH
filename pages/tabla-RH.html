@@ -35,7 +35,7 @@
 
         <nav>
           <a href="#" class="selected">Lista de candidatos</a>
-          <a href="#">Agregar candidato</a>
+          <a href="/pages/formulario-RH.html">Agregar candidato</a>
           <a href="/index.html" class="logout">Cerrar sesión <img src="/img/logout.png" alt="logout" width="30px"></a>
         </nav>
       </div>
@@ -44,41 +44,22 @@
         <table style="width: 100%;">
           <tr>
             <td><h1>Candidatos</h1></td>
-            <td class="hide-mobile"><input class="search-bar" placeholder="Buscar candidatos..."></td>
+            <td class=""><input oninput="search(this)" class="search-bar" placeholder="Buscar candidatos..."></td>
           </tr>
         </table>
         <table class="table">
-          <tr>
-            <th>Nombre <img src="/img/arrow.png" class="arrow toggle-down" width="12px"></th>
-            <th class="hide-mobile">Posición <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
-            <th class="hide-mobile">Entrevistador <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
-            <th>Estatus <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
-            <th class="hide-mobile">Fecha entrevista <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
-          </tr>
-          <tr>
-            <td>Alan Josue López López</td>
-            <td class="hide-mobile">Frontend Developer</td>
-            <td class="hide-mobile">Luis Flores</td>
-            <td>Entrevistado</td>
-            <td class="hide-mobile">22/08/2022</td>
-            <td ><a class="btn-table"> <img src="/img/delete.png" width="18px" style="vertical-align: sub;"> <span class="hide-mobile">&nbsp;Eliminar </span></a></td>
-          </tr>
-          <tr>
-            <td>Jorge Aguilar hernandez</td>
-            <td class="hide-mobile">Frontend Developer</td>
-            <td class="hide-mobile">Pedro Gómez</td>
-            <td>Pendiente</td>
-            <td class="hide-mobile">25/08/2022</td>
-            <td><a class="btn-table"> <img src="/img/delete.png" width="18px" style="vertical-align: sub;"> <span class="hide-mobile">&nbsp;Eliminar </span></a></td>
-          </tr>
-          <tr>
-            <td>Set Reyes Sandoval</td>
-            <td class="hide-mobile">Frontend Developer</td>
-            <td class="hide-mobile">Laura Gómez</td>
-            <td>Entrevistado</td>
-            <td class="hide-mobile">20/08/2022</td>
-            <td><a class="btn-table"> <img src="/img/delete.png" width="18px" style="vertical-align: sub;"> <span class="hide-mobile">&nbsp;Eliminar </span></a></td>
-          </tr>
+          <thead>
+            <tr>
+              <th onclick="sort('nombre',this)">Nombre <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
+              <th onclick="sort('posicion',this)" class="hide-mobile">Posición <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
+              <th onclick="sort('entrevistador',this)" class="hide-mobile">Entrevistador <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
+              <th onclick="sort('estatus',this)" >Estatus <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
+              <th onclick="sort('fechaEntrevista',this)"class="hide-mobile"> Fecha de entrevista<img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
+            </tr>
+          </thead>
+          <tbody id="data"></tbody>
+          <!--Este sirve usando Local Storage-->
+          <!--<tbody id="data-form"></tbody>-->
         </table>
       </div>
 
@@ -89,6 +70,7 @@
   <script src="/js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="/js/plugins.js"></script>
   <script src="/js/main.js"></script>
+  <script src="../js/vendor/api-tabla-RH.js"></script>
 
 </body>
 

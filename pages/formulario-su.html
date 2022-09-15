@@ -34,21 +34,6 @@
         </div>
 
         <nav>
-          <!--    <li class="item has-submenu">
-              <a tabindex="0">ADMIN</a>
-              <ul class="submenu">
-                  <li class="subitem dashboard"><a href="#">Dashboard</a></li>
-                  <li class="subitem grafico"><a href="#">Gráficos</a></li>
-              </ul>
-          </li>
-          <li class="item has-submenu">
-              <a tabindex="0">RH</a>
-              <ul class="submenu">
-                  <li class="subitem"><a href="#">Lista de candidatos</a></li>
-              </ul>
-          </li>
-          <a href="/index.html" class="logout">Cerrar sesión <img src="/img/logout.png" alt="logout"
-                  width="30px"></a> -->
           <div class="accordion">
               <div>
                   <input type="checkbox" id="section1" class="accordion__input">
@@ -72,23 +57,42 @@
       </div>
 
       <div class="content">
-        <table style="width: 100%;">
-          <tr>
-            <td><h1>Candidatos</h1></td>
-            <td class=""><input oninput="search(this)" class="search-bar" placeholder="Buscar candidatos..."></td>
-          </tr>
-        </table>
-        <table class="table">
-          <thead>
-            <tr>
-              <th onclick="sort('nombre',this)">Nombre <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
-              <th onclick="sort('posicion',this)" class="hide-mobile">Posición <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
-              <th onclick="sort('fechaRegistro',this)" class="hide-mobile">Registro <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
-              <th onclick="sort('estatus',this)" >Estatus <img src="/img/arrow.png" class="arrow toggle-up" width="12px"></th>
-            </tr>
-          </thead>
-          <tbody id="data"></tbody>
-        </table>
+        <h1 class="titulo-form-su">Registro candidatos</h1>
+        <form action="" class="form-rh" id="form-su">
+            <h2>Nombre Recursos Humanos</h2>
+            <input class="field-su" type="text" name="" id="nombreRh" placeholder="Nombre">
+            <h2>Fecha</h2>
+            <input class="field-su" type="date" id="fechaRegistro">
+            <h2>Entrevistador</h2>
+            <input class="field-su" type="text" name="" id="entrevistador1" placeholder="Entrevistador">
+            <h2>Especialidad</h2>
+            <input class="field-su" type="text" name="" id="especialidad" placeholder="Especialidad">
+            <h2>Experiencia</h2>
+            <input class="field-su" type="text" name="" id="experiencia" placeholder="Experiencia">
+            <h2>Encargado</h2>
+            <input class="field-su" type="text" name="" id="encargado" placeholder="Encargado">
+            <br>
+            <br>
+            <label for="file-upload" class="btn-color-blue btn-cv">
+                Curriculum Vitae
+            </label>
+            <input id="file-upload"  type="file" name="Curriculim Vitae" id="cv">
+            
+            <br>
+            <br>
+            <input class= "btn-color-blue btn-guardar" type="submit" value="Guardar">
+        </form>
+        <div class="footer show-mobile">
+            <div class="footer-1">
+                <img src="../img/barras.png" >
+            </div>
+            <div class="footer-2">
+                <img src="../img/plus-circle 1.png" >
+            </div>
+            <div class="footer-3">
+                <img src="../img/X.png" >   
+            </div>
+        </div>
       </div>
 
     </div>
@@ -98,7 +102,8 @@
   <script src="/js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="/js/plugins.js"></script>
   <script src="/js/main.js"></script>
-  <script src="../js/vendor/api-su-rh.js"></script>
+  <script src="../js/vendor/formulario-SU.js"></script>
+
 
 </body>
 

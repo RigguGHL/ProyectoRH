@@ -1,3 +1,4 @@
+//Obtenemos los valores de la url
 let valores = window.location.search;
 console.log(valores);
 
@@ -10,4 +11,4 @@ console.log(nombre);
 
 let nombreCandidato = document.querySelector('.nombre-candidato');
 
-nombreCandidato.textContent = puesto + " " + nombre;
+nombreCandidato.textContent = puesto + " - " + nombre;

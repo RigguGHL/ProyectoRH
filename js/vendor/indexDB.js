@@ -17,3 +17,4 @@ formularioRH.addEventListener('submit', function(evento){
     localStorage.setItem('fecha', fechaForm.value.toString());
 
     alert('Datos guardados correctamente :)');
+});

@@ -566,6 +566,12 @@ input[type="file"] {
   width: 25%;
 }
 
+#chartBar, #chartDonut {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /*Fin de Estilos de la pantalla de gráficos*/
 
 
@@ -587,6 +593,10 @@ input[type="file"] {
 
     .hide-mobile {
       display: table-cell;
+    }
+
+    #chartBar, #chartDonut {
+      width: 35%;
     }
 
     .show-mobile {
